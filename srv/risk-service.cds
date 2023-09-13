@@ -15,6 +15,10 @@ service RiskService {
 
     annotate Risks with @odata.draft.enabled;
 
+    // entity Risks as projection on rm.Risks;
+
+    annotate Risks with @odata.draft.enabled;
+
     entity Mitigations @(restrict : [
         {
             grant : ['READ'],
